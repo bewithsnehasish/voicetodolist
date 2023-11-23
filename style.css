@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Medium.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +12,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    font-family: Gilroy;
+    font-family: Gilroy ;
 }
 
 #main{
@@ -21,11 +26,13 @@ html,body{
     gap: 2vh;
 }
 
-#taskinput{
-    widows: 18vw;
+
+#taskInput{
+    width: 18vw;
     height: 5vh;
     font-size: 1vw;
-    padding: 0px 0.5px;
+    padding: 0px 5px;
+    border-radius: 5px;
 }
 
 button{
@@ -36,4 +43,29 @@ button{
     border: none;
     font-size: 0.9vw;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+#taskList{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+li span{
+    padding-left: 1vw;
+
 }
