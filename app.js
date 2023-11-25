@@ -22,6 +22,7 @@ if("SpeechRecognition" in window||"webkitSpeechRecognition" in window){
             taskList.appendChild(taskItem);
             taskInput.value=="";
         }
+        
     }
 
 }
